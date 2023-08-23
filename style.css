@@ -230,44 +230,4 @@ iframe {
   margin-left: 10px;
 }
 
-/* 3D Elements Section */
-.3d-elements-section {
-  text-align: center;
-  background-color: #fff;
-  padding: 50px 0;
-}
 
-.cube-container {
-  perspective: 1000px;
-}
-
-.cube {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: rotateX(0deg) rotateY(0deg);
-  transition: transform 1s;
-}
-
-.cube div {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: rgba(108, 192, 112, 0.8);
-  border: 2px solid #6cc070;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  color: white;
-}
-
-.cube .front  { transform: translateZ(75px); }
-.cube .back   { transform: rotateY(180deg) translateZ(75px); }
-.cube .right  { transform: rotateY(90deg) translateZ(75px); }
-.cube .left   { transform: rotateY(-90deg) translateZ(75px); }
-.cube .top    { transform: rotateX(90deg) translateZ(75px); }
-.cube .bottom { transform: rotateX(-90deg) translateZ(75px); }
-
-/* ... More CSS code ... */
