@@ -1,0 +1,273 @@
+/* Reset some default styles */
+body, h1, h2, p, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .navigation a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Lato:300');
+@import "compass/css3";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+html, body {
+  height: 100%;
+  color: white;
+}
+.main-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+.main-nav i {
+  font-size: 8px;
+  display: block;
+  margin: 10px;
+  transition: margin 200ms ease;
+}
+.main-nav i:hover {
+  color: #ed542c;
+}
+.main-nav:hover > i {
+  margin: 15px 12px;
+}
+.page {
+  height: 100%;
+  background-color: transparent;
+}
+.main-page-content {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-page-content h1 {
+  font-family: "Bungee Hairline";
+  font-size: 60px;
+}
+.main-page-content h2 {
+  font-family: "Lato";
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+iframe {
+  position: absolute;
+  top: -100%;
+}
+.universe {
+  z-index: -10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: contrast(120%);
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+.universe-container {
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(1600px at 70% 120%, #212750 10%, #020409 100%);
+}
+.content {
+  width: inherit;
+  height: inherit;
+}
+#universe {
+  width: 100%;
+  height: 100%;
+}
+#footer {
+  position: absolute;
+  bottom: 0px;
+  height: 300px;
+  width: 100%;
+}
+#scene {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -800px;
+  z-index: 100000;
+}
+
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(167, 87, 87, 0.6)), url('background.jpg');
+    background-size: cover;
+    background-size: cover;
+    height: 80vh;
+    color: #fff;
+  }
+  
+  .event {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .event-image {
+    background-image: url('event-image.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .event-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .event-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .launch-button {
+    background: linear-gradient(to bottom, rgba(28, 193, 222, 0.4), rgba(46, 41, 39, 0.6));
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    width: 30vh;
+    height: 4vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 15px;
+  }
+  
+  .launch-button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Footer */
+  footer {
+    position: absolute;
+    top: 95vh;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+  }
+  .footer{
+    color: #fff !important;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+  }
+  
+  .social-icon {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  /* ... Previous CSS code ... */
+
+/* Pseudo-Elements Section */
+.pseudo-elements-section {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 50px 0;
+}
+
+.pseudo-elements-section h2::before {
+  content: ">";
+  color: #6cc070;
+  margin-right: 10px;
+}
+
+.pseudo-elements-section h2::after {
+  content: "<";
+  color: #6cc070;
+  margin-left: 10px;
+}
+
+/* 3D Elements Section */
+.3d-elements-section {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.cube-container {
+  perspective: 1000px;
+}
+
+.cube {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 1s;
+}
+
+.cube div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(108, 192, 112, 0.8);
+  border: 2px solid #6cc070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.cube .front  { transform: translateZ(75px); }
+.cube .back   { transform: rotateY(180deg) translateZ(75px); }
+.cube .right  { transform: rotateY(90deg) translateZ(75px); }
+.cube .left   { transform: rotateY(-90deg) translateZ(75px); }
+.cube .top    { transform: rotateX(90deg) translateZ(75px); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(75px); }
+
+/* ... More CSS code ... */
